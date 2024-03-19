@@ -54,7 +54,7 @@ class AddEmployee extends React.Component {
         if (data.message.toLowerCase() === " registered successfully") {
           this.setState({
             error: true,
-            errorMsg: "registered successfully",
+            errorMsg: "registrado",
             form: {
               name: "",
               lastName: "",
@@ -70,7 +70,7 @@ class AddEmployee extends React.Component {
         } else if (data.error === "Error registering ") {
           this.setState({
             error: true,
-            errorMsg: "Error registering ",
+            errorMsg: "registrando",
           });
         }
       })
