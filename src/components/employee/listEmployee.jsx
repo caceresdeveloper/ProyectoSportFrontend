@@ -94,7 +94,7 @@ class ListEmployee extends React.Component {
         this.setState((prevState) => ({
           data: prevState.data.filter((employee) => employee.id !== id),
           error: true,
-          errorMsg: " deleted successfully",
+          errorMsg: " Eliminado",
         }));
 
         this.getemployees();
@@ -102,7 +102,7 @@ class ListEmployee extends React.Component {
       .catch((error) => {
         this.setState({
           error: true,
-          errorMsg: "Error deleting ",
+          errorMsg: "Eliminado ",
         });
       });
   };
@@ -133,17 +133,17 @@ class ListEmployee extends React.Component {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.message === "updated succesfully") {
+        if (data.message === "Actualizado") {
           this.setState({
             error: true,
-            errorMsg: "updated successfully",
+            errorMsg: "Actualizaod",
           });
           this.closeModal();
           this.getemployees();
-        } else if (data.error === "Error updating ") {
+        } else if (data.error === "Actualizado") {
           this.setState({
             error: true,
-            errorMsg: "Error updating ",
+            errorMsg: "Actualizado ",
           });
         }
       })
