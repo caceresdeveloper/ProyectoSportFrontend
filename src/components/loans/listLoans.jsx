@@ -65,16 +65,16 @@ class ListEmployee extends React.Component {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.message === "updated successfully") {
+        if (data.message === "Actualizado") {
           this.setState({
             error: true,
-            errorMsg: "updated successfully",
+            errorMsg: "Actualizado",
           });
           this.getLoans();
-        } else if (data.error === "Error updating ") {
+        } else if (data.error === "Error Actualizando ") {
           this.setState({
             error: true,
-            errorMsg: "Error updating ",
+            errorMsg: "Error Actualizando ",
           });
         }
       })
