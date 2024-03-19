@@ -121,7 +121,7 @@ class Login extends React.Component {
             </div>
             <div className="col-md-6 d-none d-md-block">
               <img
-                src="https://vui.unsplash.com/resize?height=256&quality=60&type=auto&url=https%3A%2F%2Fsearched-images.s3.us-west-2.amazonaws.com%2Fe5044507-438b-4913-8338-158265d70307%3FX-Amz-Algorithm%3DAWS4-HMAC-SHA256%26X-Amz-Credential%3DAKIAQ4GRIA4QWII6SA75%252F20240317%252Fus-west-2%252Fs3%252Faws4_request%26X-Amz-Date%3D20240317T211345Z%26X-Amz-Expires%3D86400%26X-Amz-SignedHeaders%3Dhost%26X-Amz-Signature%3D8c326b1a44c3f82dba28998f41256ee8fb99170325780babce40307d2b646b77&sign=qNdsZr9QCRzK6gc9RUSpz6km5kaaAbroMO0EXNL7PWY"
+                src="https://images.unsplash.com/photo-1543513960-bd9fe93f4fd9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZXh0cmVtb3xlbnwwfHwwfHx8MA%3D%3D"
                 className="img-fluid"
                 style={{ minHeight: "100%" }}
               />
