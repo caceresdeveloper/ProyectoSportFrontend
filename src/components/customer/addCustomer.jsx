@@ -56,10 +56,10 @@ class AddCustomer extends React.Component {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.message.toLowerCase() === "Afiliado registered successfully") {
+        if (data.message.toLowerCase() === "Afiliado registrado") {
           this.setState({
             error: true,
-            errorMsg: "customer registered Afiliado",
+            errorMsg: "registrando Afiliado",
             form: {
               name: "",
               lastName: "",
@@ -76,7 +76,7 @@ class AddCustomer extends React.Component {
         } else {
           this.setState({
             error: true,
-            errorMsg: "Error registering Admin",
+            errorMsg: "registrando Admin",
           });
         }
       })
