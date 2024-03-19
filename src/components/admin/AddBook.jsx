@@ -34,7 +34,7 @@ class AddBook extends React.Component {
         ) {
           this.setState({
             error: true,
-            errorMsg: "Evento registered successfully",
+            errorMsg: "Evento registrado",
             form: {
               ISBN: "",
               name: "",
@@ -49,7 +49,7 @@ class AddBook extends React.Component {
 
           this.setState({
             error: true,
-            errorMsg: "Error registering Evento",
+            errorMsg: "Evento Registrado",
           });
         }
       })
