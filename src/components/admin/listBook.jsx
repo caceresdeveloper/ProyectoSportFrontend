@@ -74,7 +74,7 @@ class ListBook extends React.Component {
       this.setState((prevState) => ({
         data: prevState.data.filter((book) => book.ISBN !== isbn),
         error: true,
-        errorMsg: "Evento deleted successfully",
+        errorMsg: "Evento Eliminado correctamente",
       }));
       setTimeout(() => {
         this.setState({ showAlert: false });
@@ -106,17 +106,17 @@ class ListBook extends React.Component {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.message === "Evento updated successfully") {
+        if (data.message === "Evento Actualizado") {
           this.setState({
             error: true,
-            errorMsg: "Evento updated successfully",
+            errorMsg: "Evento Actualizado",
           });
           this.closeModal();
           this.getBooks();
-        } else if (data.error === "Error updating evento") {
+        } else if (data.error === "Actualizando evento") {
           this.setState({
             error: true,
-            errorMsg: "Error updating evento",
+            errorMsg: "Actualizar evento",
           });
         }
       })
