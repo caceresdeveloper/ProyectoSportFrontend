@@ -44,10 +44,10 @@ class AddCustomer extends React.Component {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.message === "register successfully") {
+        if (data.message === "registrado") {
           this.setState({
             error: true,
-            errorMsg: "registered successfully",
+            errorMsg: "registrado",
             form: {
               username: "",
             },
@@ -55,7 +55,7 @@ class AddCustomer extends React.Component {
         } else {
           this.setState({
             error: true,
-            errorMsg: "Error registering ",
+            errorMsg: "Error registrando ",
           });
         }
       })
